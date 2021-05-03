@@ -45,5 +45,6 @@ Route::group([
 
 });
 
+Route::view('tes', 'layouts.app');
 
 require __DIR__.'/auth.php';

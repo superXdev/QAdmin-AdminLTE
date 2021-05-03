@@ -17,7 +17,7 @@
 				<x-card>
 					<x-slot name="title">General</x-slot>
 
-					<img src="{{ (setting('logo')) ? '/storage/'.setting('logo') : '/dist/img/logo/logo2.png' }}" class="img-fluid mb-3" width="150" alt="">
+					<img src="{{ (setting('logo')) ? '/storage/'.setting('logo') : '/dist/img/AdminLTELogo.png' }}" class="img-fluid mb-3" width="150" alt="">
 
 					<x-input text="File Logo" name="logo" type="file" />
 

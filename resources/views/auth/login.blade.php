@@ -9,18 +9,39 @@
         <x-alert-error/>
         
         <x-slot name="title">
-            Login
+            <a href="" class="h1"><b>Admin</b>LTE</a>
         </x-slot>
-        <form action="{{ route('login') }}" method="POST">
-            @csrf
+        <p class="login-box-msg">Sign in to start your session</p>
 
-            <!-- Email field -->
-            <x-input type="text" text="Email" name="email" />
+      <form action="{{ route('login') }}" method="post">
+        @csrf
+        <x-input-group type="email"  name="email" text="Email" icon="envelope" />
 
-            <!-- Password field -->
-            <x-input type="password" text="Password" name="password" />
-            
-            <x-button type="primary btn-block" text="Login" for="submit" />
-        </form>
+        <x-input-group type="password"  name="password" text="Password" icon="lock" />
+        
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember" name="remember">
+              <label for="remember">
+                Remember Me
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+      <!-- /.social-auth-links -->
+
+      <p class="mb-1">
+        <a href="forgot-password.html">I forgot my password</a>
+      </p>
+      <p class="mb-0">
+        <a href="register.html" class="text-center">Register a new membership</a>
+      </p>
     </x-auth-card>
 </x-guest-layout>

@@ -19,13 +19,13 @@
                 <x-card>
 
                 	<div class="text-center mb-2">
-                		<img src="{{ asset((auth()->user()->avatar) ? 'storage/'.auth()->user()->avatar : 'dist/img/boy.png') }}" alt="" style="border: 1px solid rgba(0,0,0,.25); border-radius: 10px; width: 200px">
+                		<img src="{{ asset((auth()->user()->avatar) ? 'storage/'.auth()->user()->avatar : 'dist/img/user2-160x160.jpg') }}" alt="" style="border: 1px solid rgba(0,0,0,.25); border-radius: 10px; width: 200px">
                 	</div>
 
                 	<form action="" method="POST">
                 		@csrf
 
-                        <input type="file" name="avatar">
+                        <input type="file" name="avatar" id="avatar">
                 		<x-input type="text" text="Full Name" name="name" value="{{ auth()->user()->name }}" />
 
 	                	<x-input type="password" text="Old Password" name="old_password" />
@@ -44,7 +44,7 @@
         <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
 
         <script>
-        const inputElement = document.querySelector('input[type="file"]');
+        const inputElement = document.querySelector('input#avatar');
         const pond = FilePond.create( inputElement );
 
         FilePond.setOptions({

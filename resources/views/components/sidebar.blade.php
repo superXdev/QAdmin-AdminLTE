@@ -1,13 +1,8 @@
-<ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
-        <div class="sidebar-brand-icon">
-            <img src="{{ asset((setting('logo')) ? '/storage/'.setting('logo') : 'dist/img/logo/logo2.png') }}">
-        </div>
-        <div class="sidebar-brand-text mx-3">RuangAdmin</div>
-    </a>
-    <hr class="sidebar-divider my-0">
-
-    <x-nav-link 
+<nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+      <!-- Add icons to the links using the .nav-icon class
+           with font-awesome or any other icon font library -->
+      <x-nav-link 
         text="Dashboard" 
         icon="tachometer-alt" 
         url="{{ route('admin.dashboard') }}"
@@ -44,4 +39,5 @@
         active="{{ request()->routeIs('admin.settings') ? ' active' : '' }}"
     />
     @endcan
-</ul>
+    </ul>
+</nav>

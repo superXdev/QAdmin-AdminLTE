@@ -1,7 +1,7 @@
 <div class="card mb-4">
-    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-        <h6 class="m-0 font-weight-bold text-primary">{{ ($title) ?? '' }}</h6>
-        {{ ($option) ?? '' }}
+    <div class="card-header ">
+        <h3 class="card-title">{{ ($title) ?? '' }}</h3>
+        <div class="card-tools">{{ ($option) ?? '' }}</div>
     </div>
     <div class="card-body"> 
     	{{ $slot }}

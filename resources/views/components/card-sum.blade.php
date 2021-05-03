@@ -1,16 +1,14 @@
-<div class="col-xl-{{ ($size) ?? '3' }} col-md-6 mb-4">
-    <div class="card h-100">
-        <div class="card-body">
-            <div class="row align-items-center">
-            <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-uppercase mb-1">{{ $text }}</div>
-                <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $value }}</div>
-                
-            </div>
-            <div class="col-auto">
-                <i class="fas fa-{{ $icon }} fa-2x text-{{ ($color) ?? 'primary' }}"></i>
-            </div>
-            </div>
-        </div>
+<div class="col-lg-{{ ($size) ?? '3' }} col-6">
+    <!-- small box -->
+    <div class="small-box bg-{{ ($color) ?? 'primary' }}">
+      <div class="inner">
+        <h3>{{ $value }}</h3>
+
+        <p>{{ $text }}</p>
+      </div>
+      <div class="icon">
+        <i class="ion ion-{{ $icon }}"></i>
+      </div>
+      <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
     </div>
 </div>

@@ -1,6 +1,8 @@
-<li class="nav-item{{ $active }}">
-    <a class="nav-link" href="{{ $url }}">
-        <i class="fas fa-fw fa-{{ $icon }}"></i>
-        <span>{{ $text }}</span>
-    </a>
+<li class="nav-item">
+	<a href="{{ $url }}" class="nav-link{{ $active }}">
+	  <i class="nav-icon fas fa-{{ $icon }}"></i>
+	  <p>
+	    {{ $text }}
+	  </p>
+	</a>
 </li>
