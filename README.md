@@ -23,7 +23,7 @@ a free, open-source dashboard panel starter kit for Laravel. Just intall and eve
   
 ## Features
 
-- ruangAdmin template
+- AdminLTE 3 template
 - Authentication with Laravel Breeze
 - User & Roles management
 - Activity logs
