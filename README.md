@@ -1,7 +1,7 @@
 # QAdmin
 a free, open-source dashboard panel starter kit for Laravel. Just intall and everything is ready
 
-![App Screenshot](https://github.com/superXdev/QAdmin/blob/main/public/dist/img/screenshot/ss.png?raw=true)
+![App Screenshot](https://github.com/superXdev/QAdmin-AdminLTE/blob/main/public/dist/img/ss.png?raw=true)
 
   
 
