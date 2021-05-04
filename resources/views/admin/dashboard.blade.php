@@ -4,28 +4,28 @@
     </x-slot>
 
     <section class="row">
-        <x-card-sum 
+        <x-card-sum-v2 
             text="Total Customer" 
             value="22" 
-            icon="person" 
+            icon="users" 
             color="warning"
         />
-        <x-card-sum 
+        <x-card-sum-v2 
             text="Total Visitor" 
             value="1450" 
-            icon="stats-bars" 
+            icon="chart-line" 
             color="primary"
         />
-        <x-card-sum 
+        <x-card-sum-v2 
             text="Income" 
             value="$1200" 
-            icon="cash" 
+            icon="money-bill" 
             color="success"
         />
-        <x-card-sum 
+        <x-card-sum-v2 
             text="Total Product" 
             value="42" 
-            icon="bag" 
+            icon="box" 
             color="danger"
         />
     </section>

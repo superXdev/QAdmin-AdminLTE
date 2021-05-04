@@ -39,5 +39,12 @@
         active="{{ request()->routeIs('admin.settings') ? ' active' : '' }}"
     />
     @endcan
+    <x-nav-link 
+        text="Log out" 
+        icon="sign-out-alt" 
+        url="#"
+        active=""
+        id="tes"
+    />
     </ul>
 </nav>

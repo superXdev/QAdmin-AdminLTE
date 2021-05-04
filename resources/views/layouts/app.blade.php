@@ -30,10 +30,6 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
-  <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="{{ asset('dist/img/AdminLTELogo.png') }}" alt="AdminLTELogo" height="60" width="60">
-  </div>
 
   <!-- Navbar -->
     <x-topbar/>
@@ -43,7 +39,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src="{{ asset('dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="{{ asset((setting('logo')) ? '/storage/'.setting('logo') : 'dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
 
@@ -96,7 +92,7 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer mt-2">
-    <strong>Developed by <a href="">superXdev</a></strong> with <a href="https://adminlte.io">AdminLTE.io</a>.
+    Developed by <a href="">superXdev</a> with <a href="https://adminlte.io">AdminLTE.io</a>.
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 3.1.0-rc
