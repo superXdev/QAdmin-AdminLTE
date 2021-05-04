@@ -3,9 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{DashboardController, UserController, RoleController};
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/login');
 
 Route::group([
 	'middleware' => 'auth',

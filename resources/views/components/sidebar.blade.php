@@ -9,7 +9,7 @@
         active="{{ request()->routeIs('admin.dashboard') ? ' active' : '' }}"
     />
     
-    <hr class="sidebar-divider mb-0">
+    <li class="nav-header">USERS</li>
 
     @can('member-list')
     <x-nav-link 
@@ -29,7 +29,7 @@
     />
     @endcan
 
-    <hr class="sidebar-divider mb-0">
+    <li class="nav-header">OTHERS</li>
     
     @can('setting-list')
     <x-nav-link 
@@ -39,13 +39,21 @@
         active="{{ request()->routeIs('admin.settings') ? ' active' : '' }}"
     />
     @endcan
-        <li class="nav-item">
-          <a href="#" class="nav-link" id="logout">
-            <i class="nav-icon fas fa-sign-out-alt"></i>
-            <p>
-              Logout
-            </p>
-          </a>
-        </li>
+
+    <x-nav-link 
+        text="Activity Log" 
+        icon="th" 
+        url="{{ route('admin.logs') }}"
+        active="{{ request()->routeIs('admin.logs') ? ' active' : '' }}"
+    />
+
+    <li class="nav-item">
+      <a href="#" class="nav-link" id="logout">
+        <i class="nav-icon fas fa-sign-out-alt"></i>
+        <p>
+          Logout
+        </p>
+      </a>
+    </li>
     </ul>
 </nav>
