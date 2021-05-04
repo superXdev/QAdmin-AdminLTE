@@ -137,6 +137,17 @@
 <script src="{{ asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('dist/js/adminlte.js') }}"></script>
+<script>
+  $('#logout').click(function(e){
+    e.preventDefault()
+      const ok = confirm('Ingin keluar?')
+
+      if(ok) {
+        $.post('{{ route('logout') }}', {_token: '{{ csrf_token() }}'})
+        location.reload();
+      }
+  })
+</script>
 {{ ($script) ?? '' }}
 </body>
 </html>
