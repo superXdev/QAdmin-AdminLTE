@@ -37,7 +37,7 @@ a free, open-source dashboard panel starter kit for Laravel. Just intall and eve
 You can fork or clone this project
 
 ``` 
-git clone git@github.com:superXdev/QAdmin.git
+git clone git@github.com:superXdev/QAdmin-AdminLTE.git
 cd QAdmin
 composer install
 cp .env.example .env <-- edit db config
